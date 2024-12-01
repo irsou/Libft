@@ -1,7 +1,7 @@
 # Libft
 
 
-Funciones:
+Funciones de libc:
 
 • ft_isalpha
 • ft_isdigit
@@ -14,9 +14,9 @@ Funciones:
 • ft_memcpy
 • ft_memmove
 • ft_strlcpy
-ft_strlcat
-ft_toupper
-ft_tolower
+• ft_strlcat
+• ft_toupper
+• ft_tolower
 ft_strchr
 ft_strrchr
 ft_strncmp
