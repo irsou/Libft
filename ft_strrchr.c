@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 19:50:22 by marvin            #+#    #+#             */
-/*   Updated: 2024/12/01 19:50:22 by marvin           ###   ########.fr       */
+/*   Updated: 2024/12/02 20:00:55 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	int pos;
-	char *ptr;
+	int		pos;
+	char	*ptr;
 
 	pos = 0;
 	ptr = NULL;

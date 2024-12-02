@@ -6,9 +6,11 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 09:24:55 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/11/30 11:28:55 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/02 20:01:54 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	bzero(void *ptr, size_t len)
 {

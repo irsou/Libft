@@ -6,11 +6,11 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 20:08:37 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/11/30 11:51:59 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:05:20 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 void	*ft_memset(void *ptr, int value, size_t length)
 {

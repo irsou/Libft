@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 10:33:09 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/01 13:24:48 by marvin           ###   ########.fr       */
+/*   Updated: 2024/12/02 20:00:34 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dest_size)
 	while (src[src_len] != '\0')
 		src_len++;
 	if (dest_size == 0)
-	   return (src_len);
+		return (src_len);
 	while (pos < dest_size - 1 && src[pos] != '\0')
 	{
 		dest[pos] = src[pos];
