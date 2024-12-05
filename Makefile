@@ -48,7 +48,7 @@ AR = ar rcs
 
 
 %.o: %.c libft.h
-	${CC} ${FLAGS} -I. -c $< -o $@
+	${CC} ${FLAGS} -c $< -o $@
 
 all:$(NAME)
 

@@ -3,20 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 10:17:48 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/11/30 11:30:38 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/05 22:13:46 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t length)
 {
 	unsigned char	*d;
-	unsigned char	*s;
+	const unsigned char	*s;
 
-	d = dest;
-	s = src;
+	d = (unsigned char*)dest;
+	s = (const unsigned char*)src;
 	if (d < s || d >= s + length)
 	{
 		ft_memcpy(d, s, length);

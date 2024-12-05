@@ -12,14 +12,15 @@
 
 int	ft_isalpha(char *str)
 {
-    int position;
+	int		position;
 
-    position = 0;
-    while (str[position] != '\0')
-    {
-        if (!((str[position] >= 'A' && str[position] <= 'Z') || (str[position] >= 'a' && str[position] <= 'z')))
-            return (0);
-        position++;
-    }
-    return (1);
+	position = 0;
+	while (str[position] != '\0')
+	{
+		if (!((str[position] >= 'A' && str[position] <= 'Z')
+				|| (str[position] >= 'a' && str[position] <= 'z')))
+			return (0);
+		position++;
+	}
+	return (1);
 }

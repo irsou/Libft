@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/30 09:42:10 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/05 22:09:38 by marvin           ###   ########.fr       */
+/*   Created: 2024/12/05 20:59:04 by marvin            #+#    #+#             */
+/*   Updated: 2024/12/05 20:59:04 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t length)
+int memcmp(const void *ptr1, const void *ptr2, size_t num)
 {
-	unsigned char	*d;
-	const unsigned char	*s;
+    const unsigned char *p1 = (const unsigned char *)ptr1;
+    const unsigned char *p2 = (const unsigned char *)ptr2;
+    size_t position;
 
-	d = (unsigned char*)dest;
-	s = (const unsigned char*)src;
-	while (length--)
-	{
-		*d = *s;
-		d++;
-		s++;
-	}
-	return (dest);
+    position = 0;
+    while (position < num)
+    {
+        if (p1[position] != p2[position])
+            return (p1[position] - p2[position]);
+        position++;
+    }
+    return (0);
 }
