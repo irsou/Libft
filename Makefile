@@ -6,7 +6,7 @@
 #    By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/28 17:41:08 by isousa-s          #+#    #+#              #
-#    Updated: 2024/12/06 11:46:25 by isousa-s         ###   ########.fr        #
+#    Updated: 2024/12/06 13:59:16 by isousa-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ ft_strrchr.c \
 ft_strncmp.c \
 ft_memchr.c \
 ft_memcmp.c \
-# ft_strnstr.c \
+ft_strnstr.c \
 # ft_atoi.c \
 # ft_calloc.c \
 # ft_strdup.c

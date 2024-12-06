@@ -20,7 +20,7 @@ Funciones de libc:
 • ft_strrchr
 • ft_strncmp
 • ft_memchr
-ft_memcmp
+• ft_memcmp
 ft_strnstr
 ft_atoi
 ft_calloc
