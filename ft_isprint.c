@@ -3,23 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 18:00:49 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/01 13:37:15 by marvin           ###   ########.fr       */
+/*   Updated: 2024/12/06 10:23:30 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char *str)
+int	ft_isprint(int s)
 {
-	int		position;
-
-	position = 0;
-	while (str[position] != '\0')
-	{
-		if (!(str[position] >= 32 && str[position] <= 126))
-			return (0);
-		position++;
-	}
-	return (1);
+	if (s >= 32 && s <= 126)
+		return (1);
+	return (0);
 }

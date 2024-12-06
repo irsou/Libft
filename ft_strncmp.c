@@ -6,9 +6,11 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 20:12:35 by marvin            #+#    #+#             */
-/*   Updated: 2024/12/02 20:07:49 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/06 09:11:49 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strncmp(const char *str, const char *str2, size_t n)
 {

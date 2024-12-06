@@ -25,3 +25,13 @@ ft_strnstr
 ft_atoi
 ft_calloc
 ft_strdup
+
+
+Compilar librería: 
+	make
+Ejecutar main: 
+	gcc -o main main.c libft.a
+	./main
+Si da segmetation fault:
+	gdb ./main
+	(gdb) run

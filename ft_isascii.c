@@ -6,20 +6,13 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 17:56:11 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/11/30 11:30:02 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/06 13:26:11 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char *str)
+int	ft_isascii(int s)
 {
-	int		position;
-
-	position = 0;
-	while (str[position] != '\0')
-	{
-		if (str[position] < 0 || str[position] > 127)
-			return (0);
-		position++;
-	}
-	return (1);
+	if (s >= 0 && s <= 127)
+		return (1);
+	return (0);
 }

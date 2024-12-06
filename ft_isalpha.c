@@ -3,24 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isousa-s <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 17:41:43 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/11/28 17:41:46 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/06 09:54:21 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char *str)
-{
-	int		position;
+#include "libft.h"
 
-	position = 0;
-	while (str[position] != '\0')
-	{
-		if (!((str[position] >= 'A' && str[position] <= 'Z')
-				|| (str[position] >= 'a' && str[position] <= 'z')))
-			return (0);
-		position++;
-	}
-	return (1);
+int	ft_isalpha(int s)
+{
+	if ((s >= 'A' && s <= 'Z') || (s >= 'a' && s <= 'z'))
+		return (1);
+	return (0);
 }

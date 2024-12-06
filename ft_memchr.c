@@ -6,7 +6,7 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 19:24:57 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/02 20:20:26 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/06 13:28:33 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,14 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t position;
-	unsigned char *ptr = (unsigned char *)s;
+	size_t			position;
+	unsigned char	*ptr;
 
+	ptr = (unsigned char *)s;
 	position = 0;
-	while ( position < n)
+	while (position < n)
 	{
-		if ( ptr[position] == c)
+		if (ptr[position] == (unsigned char)c)
 			return ((void *)ptr + position);
 		position++;
 	}
