@@ -21,14 +21,17 @@ Funciones de libc:
 • ft_strncmp
 • ft_memchr
 • ft_memcmp
-ft_strnstr
-ft_atoi
+• ft_strnstr
+• ft_atoi
 ft_calloc
 ft_strdup
 
-
+Ruta en local:
+	cd /mnt/c/workspace/42/LibftDesa
 Compilar librería: 
 	make
+	mingw32-make
+	mingw32-make fclean
 Ejecutar main: 
 	gcc -o main main.c libft.a
 	./main

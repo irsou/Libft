@@ -18,6 +18,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	l_position;
 
 	b_position = 0;
+
 	if (!*little)
 		return ((char *)big);
 	while (big[b_position] && b_position < len)

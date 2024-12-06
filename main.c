@@ -128,7 +128,7 @@ void	test_strrchr(void)
 void	test_strncmp(void)
 {
 	int ret = ft_strncmp("Hello", "Hello", 5);
-	printf("ft_strncmp(\"Hello\", \"Hello\", 5) -> Esperado: 0, Devuelto: %d\n", ret);
+	printf("ft_strncmp(Hello, Hello, 5) -> Esperado: 0, Devuelto: %d\n", ret);
 }
 
 void	test_memchr(void)
@@ -140,6 +140,30 @@ void	test_memchr(void)
 	printf("ft_memchr(buffer, 'W', 11) -> Esperado: World, Devuelto: %s\n", res);
 	res = ft_memchr(buffer, 'H', 0);
 	printf("ft_memchr(buffer, 'H', 0) -> Esperado: (null), Devuelto: %s\n", res);
+}
+
+void	test_strnstr(void)
+{
+	char str1[] = "Hello World";
+	char str2[] = "orl";
+	char *res;
+
+	res = ft_strnstr(str1, str2, 11);
+	printf("ft_strnstr(str1, str2, 11) -> Esperado: orld, Devuelto: %s\n", res);
+	res = ft_strnstr(str1, str2, 4);
+	printf("ft_strnstr(str1, str2, 11) -> Esperado: null, Devuelto: %s\n", res);
+}
+
+void	test_atoi(void)
+{
+	char str1[] = " -12345aaaaa";
+	char str2[] = "adsfeeee";
+	int	res;
+
+	res = ft_atoi(str1);
+	printf("ft_atoi( -12345aaaaa) -> Esperado: -12345, Devuelto: %d\n", res);
+	res = ft_atoi(str2);
+	printf("ft_atoi(adsfeeee) -> Esperado: 0, Devuelto: %d\n", res);
 }
 
 int main() {
@@ -161,6 +185,8 @@ int main() {
 	test_strrchr();
 	test_strncmp();
 	test_memchr();
+	test_strnstr();
+	test_atoi();
 	return (0);
 }
 
