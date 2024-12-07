@@ -23,7 +23,7 @@ Funciones de libc:
 • ft_memcmp
 • ft_strnstr
 • ft_atoi
-ft_calloc
+• ft_calloc
 ft_strdup
 
 Ruta en local:
@@ -38,3 +38,9 @@ Ejecutar main:
 Si da segmetation fault:
 	gdb ./main
 	(gdb) run
+
+
+Enlaces de interés:
+- https://github.com/42School/norminette
+- https://github.com/xicodomingues/francinette
+- https://github.com/ander-vieira/42zeus

@@ -33,10 +33,10 @@ ft_memchr.c \
 ft_memcmp.c \
 ft_strnstr.c \
 ft_atoi.c \
-# ft_calloc.c \
+ft_calloc.c \
 # ft_strdup.c
 
-SRC_BONUS = ft_lstnew.c
+# SRC_BONUS = ft_lstnew.c
 
 OBJ = ${SRC:.c=.o}
 OBJ_BONUS = ${SRC_BONUS:.c=.o}
