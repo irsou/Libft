@@ -227,6 +227,20 @@ void	test_substr(void)
 	free(res);
 }
 
+void	test_strjoin(void)
+{
+	char	str1[] = "Hello, ";
+	char	str2[] = " world!";
+	char	*res;
+
+	res = ft_strjoin(str1, str2);
+	printf("ft_strjoin(\" Hello, \", \"world!\") -> Esperado: \"Hello, world!\", Devuelto: \"%s\"\n", res);
+	free(res);
+	res = ft_strjoin(str1, NULL);
+	printf("ft_strjoin(\" Hello, \") -> Esperado: (null), Devuelto: \"%s\"\n", res);
+	free(res);
+}
+
 int	main(void)
 {
 	test_isalpha();
@@ -252,5 +266,6 @@ int	main(void)
 	test_calloc();
 	test_strdup();
 	test_substr();
+	test_strjoin();
 	return (0);
 }
