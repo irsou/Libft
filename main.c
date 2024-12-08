@@ -241,6 +241,19 @@ void	test_strjoin(void)
 	free(res);
 }
 
+void	test_strtrim(void)
+{
+	char	str1[] = " - Hello, World! - ";
+	char	*res;
+
+	res = ft_strtrim(str1, " - ");
+	printf("ft_strtrim(\" - Hello, World! - \") -> Esperado: \"Hello, world!\" , Devuelto: \"%s\"\n", res);
+	free(res);
+	res = ft_strtrim(str1, NULL);
+	printf("ft_strtrim(\" Hello, \") -> Esperado: (null), Devuelto: \"%s\"\n", res);
+	free(res);
+}
+
 int	main(void)
 {
 	test_isalpha();
@@ -267,5 +280,6 @@ int	main(void)
 	test_strdup();
 	test_substr();
 	test_strjoin();
+	test_strtrim();
 	return (0);
 }
