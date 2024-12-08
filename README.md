@@ -24,7 +24,10 @@ Funciones de libc:
 • ft_strnstr
 • ft_atoi
 • ft_calloc
-ft_strdup
+• ft_strdup
+
+Funciones adicionales:
+ft_substr
 
 Ruta en local:
 	cd /mnt/c/workspace/42/LibftDesa

@@ -31,3 +31,11 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dest_size)
 	dest[pos] = '\0';
 	return (src_len);
 }
+
+/* Copy strings safer than strncpy. Unlike strncpy, strlcpy() takes the full 
+ size of the buffer (not just the length) and guarantees to NUL-terminate the
+ result (as long as size is larger than 0). Note that a byte for the NUL should
+ be included in size. 
+ Only operates on true “C” strings so src must be NUL-terminated. The strlcpy()
+ function copies up to size - 1 characters from the NUL-terminated string src 
+ to dst, NUL-terminating the result. */

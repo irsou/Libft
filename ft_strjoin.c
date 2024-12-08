@@ -1,23 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/28 19:58:37 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/06 10:06:04 by isousa-s         ###   ########.fr       */
+/*   Created: 2024/12/08 16:40:04 by marvin            #+#    #+#             */
+/*   Updated: 2024/12/08 16:40:04 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+char	*ft_strjoin(char const *s1, char const *s2);
 
-size_t	ft_strlen(const char *str)
-{
-	size_t		position;
-
-	position = 0;
-	while (str[position] != '\0')
-		position ++;
-	return (position);
-}

@@ -34,7 +34,9 @@ ft_memcmp.c \
 ft_strnstr.c \
 ft_atoi.c \
 ft_calloc.c \
-# ft_strdup.c
+ft_strdup.c \
+ft_substr.c \
+ft_strjoin.c
 
 # SRC_BONUS = ft_lstnew.c
 
@@ -48,6 +50,7 @@ AR = ar rcs
 
 
 %.o: %.c libft.h
+	@echo "Compilando $< -> $@"
 	${CC} ${FLAGS} -c $< -o $@
 
 all:$(NAME)
