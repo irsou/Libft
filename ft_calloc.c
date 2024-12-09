@@ -16,8 +16,6 @@ void	*ft_calloc(size_t num, size_t size)
 {
 	void	*ptr;
 
-	if (size > SIZE_MAX / num)
-		return (NULL);
 	ptr = malloc(num * size);
 	if (!ptr)
 		return (NULL);

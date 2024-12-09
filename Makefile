@@ -1,18 +1,6 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/11/28 17:41:08 by isousa-s          #+#    #+#              #
-#    Updated: 2024/12/06 13:59:16 by isousa-s         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME = libft.a
 
-SRC = 	ft_isalpha.c \
+SRC = ft_isalpha.c \
 ft_isdigit.c \
 ft_isalnum.c \
 ft_isascii.c \
@@ -37,17 +25,7 @@ ft_calloc.c \
 ft_strdup.c \
 ft_substr.c \
 ft_strjoin.c \
-ft_strtrim.c \
-ft_split.c \
-# ft_itoa.c \
-# ft_strmapi.c \
-# ft_striteri.c \
-# ft_putchar_fd.c \
-# ft_putstr_fd.c \
-# ft_putendl_fd.c \
-# ft_putnbr_fd.c \
-
-# SRC_BONUS = ft_lstnew.c
+ft_strtrim.c
 
 OBJ = ${SRC:.c=.o}
 OBJ_BONUS = ${SRC_BONUS:.c=.o}
@@ -57,14 +35,12 @@ FLAGS = -Wall -Werror -Wextra
 RM = rm -f
 AR = ar rcs
 
-
 %.o: %.c libft.h
-	@echo "Compilando $< -> $@"
 	${CC} ${FLAGS} -c $< -o $@
 
-all:$(NAME)
+all: $(NAME)
 
-$(NAME):${OBJ}
+$(NAME): ${OBJ}
 	${AR} ${NAME} ${OBJ}
 
 bonus:${NAME} ${OBJ_BONUS}
@@ -73,8 +49,8 @@ bonus:${NAME} ${OBJ_BONUS}
 clean:
 	${RM} ${OBJ} ${OBJ_BONUS}
 
-fclean: 
-	${RM} ${NAME} ${OBJ} ${OBJ_BONUS}
+fclean: clean
+	${RM} ${NAME}
 
 re: fclean all
 
