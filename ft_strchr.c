@@ -27,4 +27,5 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[pos]);
 	return (NULL);
 }
-/* Returns a pointer to the first occurrence of the character c in the string s.*/
+/* Returns a pointer to the first occurrence of the character c in the string 
+s.*/

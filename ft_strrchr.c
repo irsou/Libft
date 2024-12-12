@@ -30,4 +30,5 @@ char	*ft_strrchr(const char *s, int c)
 	return (ptr);
 }
 
-/* Returns a pointer to the last occurrence of the character c in the string s */
+/* Returns a pointer to the last occurrence of the character c in the string
+ s */
