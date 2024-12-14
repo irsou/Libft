@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 20:47:02 by marvin            #+#    #+#             */
-/*   Updated: 2024/12/10 22:36:35 by marvin           ###   ########.fr       */
+/*   Updated: 2024/12/14 09:50:42 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,20 @@ static char	*fill_fragments_arr(char *s, size_t start, size_t len)
 	return (fragment);
 }
 
-static void	get_fragment(char *s, char c, char **fragments)
+static void	free_fragments(char **fragments, size_t frag_size)
+{
+	size_t	pos;
+
+	pos = 0;
+	while (pos < frag_size)
+	{
+		free(fragments[pos]);
+		pos++;
+	}
+	free(fragments);
+}
+
+static int	get_fragment(char *s, char c, char **fragments)
 {
 	size_t	pos;
 	size_t	start;
@@ -42,14 +55,14 @@ static void	get_fragment(char *s, char c, char **fragments)
 			fragments[frag_id] = fill_fragments_arr(s, start, pos - start + 1);
 			if (!fragments[frag_id])
 			{
-				while (frag_id > 0)
-					free(fragments[frag_id--]);
-				return ;
+				free_fragments(fragments, frag_id);
+				return (0);
 			}
 			frag_id++;
 		}
 		pos++;
 	}
+	return (1);
 }
 
 static size_t	fragment_counter(char const *s, char c)
@@ -79,7 +92,11 @@ char	**ft_split(char const *s, char c)
 	fragments = malloc(sizeof(char *) * (frag_num + 1));
 	if (!fragments)
 		return (NULL);
-	get_fragment((char *)s, c, fragments);
+	if (!get_fragment((char *)s, c, fragments))
+	{
+		free(fragments);
+		return (NULL);
+	}
 	fragments[frag_num] = NULL;
 	return (fragments);
 }

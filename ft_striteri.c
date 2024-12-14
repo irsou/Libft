@@ -6,7 +6,7 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 20:22:20 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/12 21:23:50 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/14 10:07:37 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	size_t	pos;
 
-	if (!s)
+	if (!s || !f)
 		return ;
 	pos = 0;
 	while (s[pos] != '\0')

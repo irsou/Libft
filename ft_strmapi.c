@@ -6,7 +6,7 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 19:59:22 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/12 20:26:38 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/14 10:07:05 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	len;
 
 	pos = 0;
-	if (!s)
+	if (!s || !f )
 		return (NULL);
 	len = ft_strlen(s);
 	str = malloc(sizeof(char) * (len + 1));
@@ -35,5 +35,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 
-/*
+/* Applies the function f to each character of the string s , passing its 
+index as the 1st argument and the character as the 2nd one.
+
+A new string is created with malloc(3) to store the results from the 
+successive applications of f
 */
