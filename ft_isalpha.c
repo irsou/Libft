@@ -18,3 +18,6 @@ int	ft_isalpha(int s)
 		return (1);
 	return (0);
 }
+
+/* Returns 0 if the received char is not a letter and a different number if
+its a letter*/

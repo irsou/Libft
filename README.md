@@ -31,13 +31,13 @@ Funciones adicionales:
 • ft_strjoin.c
 • ft_strtrim
 • ft_split
-ft_itoa
-ft_strmapi
-ft_striteri
-ft_putchar_fd
-ft_putstr_fd
-ft_putendl_fd
-ft_putnbr_fd
+• ft_itoa
+• ft_strmapi
+• ft_striteri
+• ft_putchar_fd
+• ft_putstr_fd
+• ft_putendl_fd
+• ft_putnbr_fd
 
 Funciones bonus:
 ft_lstnew
@@ -73,5 +73,9 @@ Si da segmetation fault:
 Enlaces de interés:
 - https://github.com/42School/norminette
 - https://github.com/xicodomingues/francinette
+- https://github.com/0x050f/libft-war-machine
 - https://github.com/ander-vieira/42zeus
 	* Si zeus no detecta el name libft.a cambiar secuencia fin de línea a lf (git config core.autocrlf input)
+/home/isousa-s/Desktop/isousa
+
+bash /home/isousa-s/Desktop/isousa/war_machine/grademe.sh

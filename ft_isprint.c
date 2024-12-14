@@ -16,3 +16,5 @@ int	ft_isprint(int s)
 		return (1);
 	return (0);
 }
+/* Returns 0 if the received char is not a printable character (including 
+space) and a different number otherwise */

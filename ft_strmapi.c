@@ -6,7 +6,7 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 19:59:22 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/14 10:07:05 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/14 11:50:18 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	len;
 
 	pos = 0;
-	if (!s || !f )
+	if (!s || !f)
 		return (NULL);
 	len = ft_strlen(s);
 	str = malloc(sizeof(char) * (len + 1));

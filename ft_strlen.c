@@ -21,3 +21,4 @@ size_t	ft_strlen(const char *str)
 		position ++;
 	return (position);
 }
+/* Calculates the length of a string*/

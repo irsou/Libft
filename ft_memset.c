@@ -14,15 +14,17 @@
 
 void	*ft_memset(void *ptr, int value, size_t length)
 {
-	size_t			i;
+	size_t			pos;
 	unsigned char	*dir;
 
-	i = 0;
+	pos = 0;
 	dir = ptr;
-	while (i < length)
+	while (pos < length)
 	{
-		dir[i] = (unsigned char)value;
-		i++;
+		dir[pos] = (unsigned char)value;
+		pos++;
 	}
 	return (dir);
 }
+/* Fills the first n (length) bytes of the memory area pointed to by str with
+the constant byte (value)*/

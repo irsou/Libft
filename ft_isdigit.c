@@ -16,3 +16,5 @@ int	ft_isdigit(int s)
 		return (1);
 	return (0);
 }
+/* Returns 0 if the received char is not a digit and a different number if
+its a digit*/

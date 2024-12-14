@@ -16,3 +16,5 @@ int	ft_isascii(int s)
 		return (1);
 	return (0);
 }
+/* Returns 0 if the received char is not an ascii and a different number if
+its in the ascii character set*/

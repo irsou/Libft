@@ -10,10 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalnum(int s)
 {
-	if ((s >= 'a' && s <= 'z') || (s >= 'A' && s <= 'Z')
-		|| (s >= '0' && s <= '9'))
+	if (ft_isalpha(s) || ft_isdigit(s))
 		return (1);
 	return (0);
 }
+/* Checks for an alphabetic character. If it.It's equivalent to 
+ft_isalpha(s) || ft_isdigit(s)*/
