@@ -6,7 +6,7 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 20:47:02 by marvin            #+#    #+#             */
-/*   Updated: 2024/12/14 09:50:42 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/15 23:16:27 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	if (!get_fragment((char *)s, c, fragments))
 	{
-		free(fragments);
+		free_fragments(fragments, frag_num);
 		return (NULL);
 	}
 	fragments[frag_num] = NULL;

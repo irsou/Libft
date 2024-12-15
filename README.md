@@ -73,6 +73,7 @@ Si da segmetation fault:
 Enlaces de interés:
 - https://github.com/42School/norminette
 - https://github.com/xicodomingues/francinette
+	*Ejecutar con francinette --strict para más info
 - https://github.com/0x050f/libft-war-machine
 - https://github.com/ander-vieira/42zeus
 	* Si zeus no detecta el name libft.a cambiar secuencia fin de línea a lf (git config core.autocrlf input)
