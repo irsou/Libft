@@ -19,13 +19,17 @@ int	ft_strncmp(const char *str, const char *str2, size_t n)
 	position = 0;
 	while (position < n)
 	{
-		if (str[position] == '\0' || str2[position] == '\0')
+		if (str[position] == '\0' || str2[position] == '\0' 
+		|| str[position] != str2[position])
 			return ((unsigned char)str[position]
 				- (unsigned char)str2[position]);
-		if (str[position] != str2[position])
-			return ((unsigned char)str[position]
-				-(unsigned char)str2[position]);
 		position++;
 	}
 	return (0);
 }
+/*  Compares the the first (at most) n bytes of two strings, s1 and s2. 
+Returns an integer:
+- 0, if the s1 and s2 are equal;
+- a negative value if s1 is less than s2;
+- a positive value if s1 is greater than s2. function is similar, except it 
+compares only . */

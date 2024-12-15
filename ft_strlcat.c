@@ -20,12 +20,10 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	src_pos;
 
 	dest_len = 0;
-	src_len = 0;
+	src_len = ft_strlen(src);
 	src_pos = 0;
 	while (dest[dest_len] != '\0' && dest_len < size)
 		dest_len++;
-	while (src[src_len] != '\0')
-		src_len++;
 	if (dest_len >= size)
 		return (size + src_len);
 	dest_pos = dest_len;
@@ -35,13 +33,12 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 		src_pos++;
 		dest_pos++;
 	}
-	if (dest_pos < size)
-		dest[dest_pos] = '\0';
+	// if (dest_pos < size)
+	dest[dest_pos] = '\0';
 	return (dest_len + src_len);
 }
 
-/* Concatenates strings safer than strncat. Unlike strncat, strlcat() takes
- the full size of the buffer (not just the length) and guarantees to NUL-
- terminate the result (as long as size is larger than 0). Note that a byte 
- for the NUL should be included in size. 
- Both src and dst must be NUL-terminated.*/
+/* Concatenates strings safer than strncat. Takes the full size of the buffer
+and guarantees to NUL-terminate the result (as long as size is larger than 0).
+- A byte for the NUL should be included in size. 
+- Both src and dst must be NUL-terminated.*/
