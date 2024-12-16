@@ -6,7 +6,7 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 21:49:59 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/15 22:16:41 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/16 18:39:01 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*next_node;
 
+	if (!lst)
+		return ;
 	if (!*lst || !del)
 		return ;
 	while (*lst)
