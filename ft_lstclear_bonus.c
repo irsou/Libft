@@ -6,11 +6,20 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 21:49:59 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/16 18:39:01 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/18 19:24:16 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Deletes and frees the given node 'lst' and all subsequent nodes, 
+ * using the function 'del' and free(3).
+ * At the end, the pointer to the list must be NULL.
+ * 
+ * @param lst (**lst)
+ * @param del (void (*del)(void*))
+ */
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
@@ -29,8 +38,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	}
 	*lst = NULL;
 }
-
-/* Elimina y libera el nodo ’lst’ dado y todos los
-consecutivos de ese nodo, utilizando la función
-’del’ y free(3).
-Al final, el puntero a la lista debe ser NULL.*/

@@ -6,11 +6,18 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 20:36:40 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/15 22:02:56 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/18 19:32:36 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Returns the number of nodes of 'lst'
+ * 
+ * @param lst (t_list *)
+ * @return int 
+ */
 
 int	ft_lstsize(t_list *lst)
 {
@@ -24,6 +31,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (number);
 }
-
-/* Cuenta el número de nodos de una lista
-*/

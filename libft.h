@@ -6,7 +6,7 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 17:42:24 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/15 22:13:20 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/16 22:18:41 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,4 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-
 #endif

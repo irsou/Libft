@@ -6,11 +6,18 @@
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 20:02:15 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/16 18:36:48 by isousa-s         ###   ########.fr       */
+/*   Updated: 2024/12/18 19:33:02 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief adds 'new' node at the end of ’lst’ list.
+ * 
+ * @param lst (t_list**)
+ * @param new (t_list*)
+ */
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
@@ -18,7 +25,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 	if (!lst)
 		return ;
-	if (!*lst )
+	if (!*lst)
 	{
 		*lst = new;
 		return ;
@@ -26,5 +33,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	last_node = ft_lstlast(*lst);
 	last_node->next = new;
 }
-
-/*Añade el nodo ’new’ al final de la lista ’lst’ */

@@ -5,12 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isousa-s <isousa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/15 20:44:03 by isousa-s          #+#    #+#             */
-/*   Updated: 2024/12/16 18:40:31 by isousa-s         ###   ########.fr       */
+/*   Created: 2024/12/16 22:52:04 by isousa-s          #+#    #+#             */
+/*   Updated: 2024/12/18 19:30:38 by isousa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Iterates the list 'lst' and applies the function 'f' to the content 
+ * of each node. Creates a resulting list from the correct and successive 
+ * application of the function 'f' to each node. The function 'del' is used to 
+ * delete the content of a node if needed.
+ * 
+ * @param lst (*lst)
+ * @param f (void *(*f)(void *))
+ * @param del (void (*del)(void *))
+ * @return t_list* 
+ */
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
@@ -36,10 +48,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-
-/* Itera la lista ’lst’ y aplica la función ’f’ al
-contenido de cada nodo. Crea una lista resultante
-de la aplicación correcta y sucesiva de la función
-’f’ sobre cada nodo. La función ’del’ se utiliza
-para eliminar el contenido de un nodo, si hace
-falta*/
